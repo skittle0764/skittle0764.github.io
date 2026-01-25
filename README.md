@@ -1,1 +1,2 @@
 # skittle0764.github.io
+I have multiple versions, 3 at this point. 1 is a glitch version, 2 is a gratient rainbow one, and the 3rd (and current one) the wavey one. version 1&2 are inside [abandoned sites](abandoned_sites) 

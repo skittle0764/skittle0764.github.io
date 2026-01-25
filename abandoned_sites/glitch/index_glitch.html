@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--    Abandoned cuz people with epilepsi will die and its a pain to code  -->
+
+<!-- Credits to https://codepen.io/creme/pen/aPJwEz -->
+<html lang='en'>
+	<head>
+		<title>Ivys site</title>
+		<meta charset='utf-8'/>
+		<link rel="stylesheet" href="w3.css">
+        <link rel="stylesheet" href="woof_glitch.css">
+
+        <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+        <script>
+            console.clear();
+            document.addEventListener('DOMContentLoaded', function () {
+                Splitting();
+            });
+        </script>
+	</head>
+	<body>
+        <div class="scanlines"></div>
+        <div class="intro-wrap">
+            <div class="noise"></div>
+            <div class="noise noise-moving"></div>
+
+            <div class="play" data-splitting>puppydev</div>
+            <div class="time" id="local-time"></div>
+            <div class="recordSpeed" id="time-on-site">SLP 0:00:00</div>
+
+            <!-- time stuff, colapse it, cuz its javascript and nobody likes 
+            javascript cuz javascriupt is trash -->
+            <script>
+                // me local time
+                function updateLocalTime() {
+                    const options = { timeZone: 'Europe/Berlin', hour: '2-digit', minute: '2-digit' };
+                    const timeElement = document.getElementById('local-time');
+                    const now = new Date().toLocaleTimeString('en-US', options);
+                    timeElement.textContent = now;
+                }
+
+                // minutely updates
+                setInterval(updateLocalTime, 60000);
+                updateLocalTime();
+
+                // sessiontime
+                const startTime = Date.now();
+                function updateTimeOnSite() {
+                    const elapsed = Math.floor((Date.now() - startTime) / 1000);
+                    const hours = Math.floor(elapsed / 3600);
+                    const minutes = Math.floor((elapsed % 3600) / 60);
+                    const seconds = elapsed % 60;
+                    const timeString = `SLP ${hours}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+                    document.getElementById('time-on-site').textContent = timeString;
+                }
+                setInterval(updateTimeOnSite, 1000);
+                updateTimeOnSite();
+            </script>
+        </div>
+    </body>
+</html>
+
+
+
+<!--    Abandoned cuz people with epilepsi will die and its a pain to code  -->
