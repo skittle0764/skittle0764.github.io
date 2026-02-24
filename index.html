@@ -1,22 +1,169 @@
 <!DOCTYPE html>
-<!-- Credits to https://codepen.io/baarbaracrr/pen/KKovmGb -->
-<html lang='en'>
-	<head>
-		<title>skitles site</title>                                 <!-- Tab Title  -->
-        <link rel="icon" href="img/sparkles.svg" type="image/x-icon">    <!-- Tab-Icon   -->
-		<meta charset='utf-8'/>                     
-        <link rel="stylesheet" href="woof.css">
-	</head>
-	<body>
-        <div>
-            <div class="wave"></div>
-            <div class="wave"></div>
-            <div class="wave"></div>
-        </div>
-    </body>
-    <main>  
-        <h1 class="title-h1">Welcome</h1>    <!-- Title -->
+<html lang='de'>
+
+<head>
+    <title>skitles site</title> <!-- Tab Title  -->
+    <link rel="icon" href="img/sparkles.svg" type="image/x-icon"> <!-- Tab-Icon   -->
+    <meta charset='utf-8' />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="index">
+    <nav class="head-menu">
+        <a class="hm-svg" href="index.html">
+            <svg class="hm-svg" xmlns="img/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M5 12l-2 0l9 -9l9 9l-2 0" />
+                <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+                <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+            </svg>
+        </a>
+        <a class="hm-svg" href="datenschutz.html">
+            <svg class="hm-svg" xmlns="img/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M9.172 19a3 3 0 1 0 2.828 -4" />
+                <path d="M14.83 5a3 3 0 1 0 -2.83 4" />
+                <path d="M9 12a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+            </svg>
+        </a>
+        <a class="hm-svg" href="impressium.html">
+            <svg class="hm-svg" xmlns="img/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10" />
+                <path d="M3 7l9 6l9 -6" />
+            </svg>
+        </a>
+        <!-- SVG Icons von https://tabler.io/icons -->
+    </nav>
+    <!--
+    <svg class="hb-bar" xmlns="img/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-separator"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12l0 .01" /><path d="M7 12l10 0" /><path d="M21 12l0 .01" /></svg>
+-->
+    <button class="bottom-jump">
+        <a href="#footer">
+            <svg xmlns="img/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" <path stroke="none" d="M0 0h24v24H0z"
+                fill="none" />
+            <path d="M8 12l4 4l4 -4" />
+            <path d="M12 8v8" />
+            <path d="M12 3c7.2 0 9 1.8 9 9c0 7.2 -1.8 9 -9 9c-7.2 0 -9 -1.8 -9 -9c0 -7.2 1.8 -9 9 -9" />
+            </svg>
+        </a>
+    </button>
+    <div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+    </div>
+    <main>
+        <h1 class="title-h1">Welcome</h1> <!-- Title -->
         <h3 class="title-h3">to my website!</h3> <!-- Subtitle -->
-        <p class="title-desc">"To infinity and beyond"</p>
+        <p class="title-quote">"Canis meus id comedit"</p>
+        <p class="title-quote-translation">Übersetzung: "Mein Hund hats gegessen"</p>
+        <div>
+            <img class="graph-img" src="img/contributions.png" alt="contributions"> <!-- GitHub Contributions Graph -->
+            <div class="graph-img-caption">
+                <ul>
+                    <li>Ich bin 2022 beigetreten und habe am 11. Juli 2022 meine erste Reposetory erstellt.</li>
+                    <li>2023 habe ich insgesamt 34 Contributions zu der Open-Source-Community gemacht,
+                        welche kleine Codingprojekte waren, die ich in meiner alten Schule erstellt habe.</li>
+                    <li>2024 habe ich nur 5 Contributions gemacht, da ich zu dieser Zeit andere Prioritäten hatte.</li>
+                    <li>2025 habe ich 67 Contributions gemacht, welche unter anderem
+                        Contributions zu einem <a href="https://github.com/kayozxo/GNOME-macOS-Tahoe">GTK-Theme für
+                            Linux
+                            Gnome</a>.</li> <!-- Punkt 23: Externer Link durch Text -->
+                    <li>2026 habe ich bisher 29 Contributions gemacht, Welche die meisten Contributions innerhalb 2
+                        Monaten
+                        für mich sind.</li>
+                </ul>
+                <table class="tab">
+                    <tr class="tab">
+                        <th class="tab">Jahr</th>
+                        <td class="tab">2022</td>
+                        <td class="tab">2023</td>
+                        <td class="tab">2024</td>
+                        <td class="tab">2025</td>
+                        <td class="tab">2026</td>
+                    </tr>
+                    <tr class="tab">
+                        <th class="tab">Contribution</th>
+                        <td class="tab">1</td>
+                        <td class="tab">34</td>
+                        <td class="tab">5</td>
+                        <td class="tab">67</td>
+                        <td class="tab">29</td>
+                    </tr>
+                </table>
+                <ul>
+                    <li>Ich habe mittlerweile über 100 Contributions in verschiedenen Projekten gemacht.</li>
+                    <li>Ich habe auch noch ein <a
+                            href=https://raw.githubusercontent.com/skittle0764/BonBon/refs/heads/main/README.md>neues
+                            Open-Source-Projekt</a> gestartet, welches ein animatronischer Roboter ist.</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <iframe class="yt" src="http://femboyz.duckdns.org:3000/embed/mEJ_jxFJU_0?" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        <!-- Punkt 29: Mindestens 1 Youtube Video. Nicht wirklich Youtube, aber eine selbst gehostete alternative -->
+
+        <div class="embed-map-fixed">
+            <div class="embed-map-container">
+                <iframe class="embed-map-frame" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                    src="https://maps.google.com/maps?width=600&height=400&hl=en&q=Milaneo&t=p&z=17&ie=UTF8&iwloc=B&output=embed">
+                </iframe>
+            </div>
+        </div>
     </main>
+</body>
+
+<body class="base">
+
+    <div class="footer" id="footer">
+        <p>Copyright © 2026 skittle0764</p>
+        <p>Alle Rechte vorbehalten.</p>
+        <div class="footer-info">
+            <table class="footer">
+                <tr class="footer">
+                    <th class="footer">Kontakt</th>
+                    <th class="footer">Legal</th>
+                </tr>
+                <tr class="footer">
+                    <td class="footer"><a href="mailto:negligee-rut-visa@duck.com">negligee-rut-visa@duck.com</a></td>
+                    <td class="footer"><a href="datenschutz.html">Datenschutz</a></td>
+                </tr>
+                <tr class="footer">
+                    <td class="footer">01234/56789</td>
+                    <td class="footer"><a href="impressium.html">Impressum</a></td>
+
+                    </td>
+                </tr>
+            </table>
+            <p>Kontakt-Formular</p>
+            <p>Im Falle dass sie anonym bleiben wollen, konnen sie das Formular verwenden:</p>
+            <form class="form">
+                <label><br><b>Vorname*</b></br></label>
+                <input type="text" id="vorname" required>
+
+                <label for="radioKG">Feedback</label>
+                <input type="radio" name="G" checked>
+                <label for="radioC">Suggestion</label>
+                <input type="radio" name="G">
+                <label for="radioB">Feature Request</label>
+                <input type="radio" name="G">
+
+                <label><br><b>Message*</b></br></label>
+                <textarea id="textarea" rows="6" required> </textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+
 </html>
